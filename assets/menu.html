@@ -61,3 +61,8 @@
     </div>
     <input type="button" name="resetButton" value="Reset">
 </div>
+<script>
+    top.postMessage({
+        menuSource: document.getElementById('menu-container').outerHTML,
+    }, "*")
+</script>
