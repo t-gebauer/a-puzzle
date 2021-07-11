@@ -1,0 +1,63 @@
+<div id="menu-container">
+    <style>
+        #menu-container {
+            font-size: 14px;
+            opacity: 0.6;
+            user-select: none;
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 6px;
+        }
+
+        #menu-container label, #menu-container input {
+            background-color: #bbb;
+            color: black;
+            padding: 5px 10px;
+            border-radius: 0;
+            border: 2px double black;
+            font-size: 14px;
+            height: auto;
+            margin: 0 6px;
+        }
+        #menu-container label:hover, #menu-container input:hover {
+            background-color: #ddd;
+        }
+        #menu-container label:active, #menu-container input:active {
+            background-color: #fff;
+        }
+
+        #menu-container input[type=color] {
+            width: 60px;
+            padding: 4px 12px;
+            min-height: 31px;
+        }
+        #menu-container input[type=file] {
+            display: none;
+        }
+        #menu-container input[type=number] {
+            width: 40px;
+        }
+        #menu-container div.checkbox {
+            margin: 0 6px;
+            display: flex;
+        }
+        #menu-container label.checkbox {
+            margin-left: 0px;
+            margin-right: -22px;
+            padding-right: 22px;
+        }
+        #menu-container input[type=checkbox] {
+            margin-left: 2px;
+            margin-right: 0px;
+        }
+    </style>
+    <label for="fileInput">Image</label>
+    <input type="file" id="fileInput" name="fileInput" accept="image/*">
+    <input type="color" name="colorInput">
+    <input type="number" name="partSizeInput" value="1" min="1">
+    <div class="checkbox">
+        <label class="checkbox" for="enableRotation">Rotate</label>
+        <input type="checkbox" id="enableRotation" name="enableRotation">
+    </div>
+    <input type="button" name="resetButton" value="Reset">
+</div>

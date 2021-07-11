@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Puzzle</title>
+    <script src="js/game.js"></script>
+    <style>
+      * { padding: 0; margin: 0; }
+      html, body, canvas { overflow: hidden; }
+      body {
+        background-color: rgb(62, 62, 85);
+        color: #ccc;
+      }
+      #loading-indicator {
+        margin: 1.5em;
+        font-family: 'Courier New', Courier, monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="dom-container"></div>
+    <p id="loading-indicator">Please wait, loading...</p>
+    <script>
+      document.getElementById('loading-indicator').hidden = true;
+    </script>
+  </body>
+</html>
